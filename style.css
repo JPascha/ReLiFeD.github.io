@@ -1,0 +1,156 @@
+/* FONTS */
+	/* GOOGLE */
+		@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);
+		@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+		@import url(https://fonts.googleapis.com/css?family=Merienda+One);
+	/* OTHER */
+		@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+/* CSS */
+
+* {
+	color:#ffffff;
+	transition: all 0.2s;
+    text-decoration: none;
+	font-family: 'Roboto', sans-serif, 'FontAwesome';
+}
+*:focus {
+	outline: none;
+}
+body {
+	background-color: #00001E;
+}
+
+.background {
+	background-image: url(img/background1.jpg);
+	background-repeat: no-repeat!important;
+	background-position: right bottom!important;
+	background-size: cover!important;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -999;
+	transition: all 0.2s, background-image 2s;
+}
+/* .background-blend {
+	background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/congruent_outline.png);
+	mix-blend-mode: soft-light;
+	opacity: 0.5;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -998;
+} */
+
+.logo {
+	background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 150px;
+	height: 150px;
+	margin-top: 20px;
+	margin-left: 20px;
+	display:inline-block;
+}
+.logo-text {
+	font-family: 'Merienda One', cursive;
+	font-size:40px;
+    color: #d8d8d8;
+	position: absolute;
+	display:inline-block;
+	left: 200px;
+	top: 75px;
+}
+.logo-text:hover {
+    color:#ffffff;
+}
+
+.bg-load1 {background-image: url(img/background2.jpg)}
+.bg-load2 {background-image: url(img/background3.jpg)}
+.bg-load3 {background-image: url(img/background4.jpg)}
+.bg-load4 {background-image: url(img/background5.jpg)}
+.bg-load {display:none;}
+
+.info {
+	position: absolute;
+	left: 50px;
+	bottom: 10px;
+	pointer-events: none;
+}
+
+.floating-info {
+	background-color: #283E56;
+	width: 220px;
+	height: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	color: #bcbcbc;
+	pointer-events: all;
+}
+
+#key a{
+	color:#00b500;
+	pointer-events: all;
+}
+
+#noKey a{
+	cursor: not-allowed;
+	color: #bcbcbc;
+	text-decoration: line-through;
+	pointer-events: all;
+}
+
+.floating-icon-info {
+	content: "";
+	color: #747474;
+	width: 30px;
+	height: 40px;
+	display: inline-block;
+	background-color: #252542;
+	border-radius: 12px 0px 0px 12px;
+	text-align: center;
+	line-height: 2.5em;
+	margin-left: -30px;
+	text-align: center;
+	float:left;
+	pointer-events: all;
+}
+.input-info {
+	background-color: #283E56;
+	border: none;
+	width: 85.4%;
+	height: 38px;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	pointer-events: all;
+}
+.submit-info {
+	border: none;
+	background: rgba(255, 255, 255, 0.06);
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	left: 0px;
+	pointer-events: all;
+}
+.submit-info:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+.popOutInfo {
+	width: 220px;
+	height: 30px;
+	position: absolute;
+	z-index: -1;
+	top: 20px;
+	background-color:green;
+	border-radius: 0px 0px 10px 10px;
+	line-height: 30px;
+	transform: scaleY(0);
+	pointer-events: all;
+}
