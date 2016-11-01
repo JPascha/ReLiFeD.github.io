@@ -8,6 +8,8 @@
   <link href="mouseparallax.css" rel="stylesheet" type="text/css">
 
   <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+
     body,
     html {
       height: 100%;
@@ -55,6 +57,39 @@
     #fore-fore-fore-fore-foreground {
       background-image: url('planet-1.png');
     }
+    .name {
+    color: #ffffff;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 6em;
+    margin: 0;
+    display: table;
+    vertical-align: middle;
+}
+
+.name p {
+    margin: 0;
+    height: 1em;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.name a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+.name a:hover {
+    opacity: 0.75;
+}
   </style>
 </head>
 
@@ -68,6 +103,7 @@
   <div id="fore-fore-foreground" class="mouse-bg"></div>
   <div id="fore-fore-fore-foreground" class="mouse-bg"></div>
   <div id="fore-fore-fore-fore-foreground" class="mouse-bg"></div>
+  <div class="name"><p><a href="#">Jan Pascha</a></p></div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="mouse.parallax.js"></script>
   <script>
