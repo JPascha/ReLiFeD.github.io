@@ -91,6 +91,88 @@
     .name a:hover {
       opacity: 0.75;
     }
+
+    @keyframes bg-gradient {
+      0% {
+        background-size: 100% 200%;
+        background-position: 0% 200%;
+      }
+      100% {
+        background-size: 200% 100%;
+        background-position: 200% 100%;
+      }
+    }
+
+    @keyframes flickering {
+      0% {
+        opacity: 1;
+      }
+      10% {
+        opacity: 0.7;
+      }
+      20% {
+        opacity: 0.64;
+      }
+      30% {
+        opacity: 0.956;
+      }
+      40% {
+        opacity: 0.8876;
+      }
+      50% {
+        opacity: 0.667;
+      }
+      60% {
+        opacity: 0.554;
+      }
+      70% {
+        opacity: 0.66;
+      }
+      80% {
+        opacity: 0.978;
+      }
+      90% {
+        opacity: 0.77;
+      }
+      100% {
+        opacity: 0.5;
+      }
+    }
+
+    .gradient {
+      height: 100vh;
+      width: 100vw;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation-name: bg-gradient;
+      animation-duration: 10000ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      background: radial-gradient(ellipse at center, rgba(34, 52, 69, 0.25) 0%, rgba(36, 80, 123, 0.5) 100%);
+    }
+
+    #background {
+      animation-name: flickering;
+      animation-duration: 4000ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
+
+    #back-background {
+      animation-name: flickering;
+      animation-duration: 3000ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    #back-back-background {
+      animation-name: flickering;
+      animation-duration: 5000ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
   </style>
 </head>
 
@@ -99,6 +181,7 @@
   <div id="back-back-background" class="mouse-bg"></div>
   <div id="back-background" class="mouse-bg"></div>
   <div id="background" class="mouse-bg"></div>
+  <div class="gradient"></div>
   <div id="foreground" class="mouse-bg"></div>
   <div id="fore-foreground" class="mouse-bg"></div>
   <div id="fore-fore-foreground" class="mouse-bg"></div>
